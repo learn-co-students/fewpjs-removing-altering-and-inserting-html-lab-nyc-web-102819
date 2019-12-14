@@ -2,8 +2,8 @@
 let main = document.getElementById("main")
 main.remove()
 
-let newHeader = document.createElement("h1")
+const newHeader = document.createElement("h1")
 newHeader.id = "victory"
-newHeader.innerText = "Triona is the Champion"
-
-document.appendChild(newHeader)
+newHeader.innerHTML = 'Triona is the champion'
+newHeader.className = "victory"
+document.body.appendChild(newHeader)
